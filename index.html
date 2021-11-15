@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Clipboard landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap');
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      position: relative;
+      float: left;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .container {
+      font-size: 18px;
+      font-family: 'Bai Jamjuree', sans-serif;
+      height: 100%;
+      width: 100%;
+    }
+
+    .header {
+      background-image: url("images/bg-header-desktop.png");
+      display: flex;
+      position: relative;
+      justify-content: center;
+      padding: 2.5rem;
+      opacity: 0.7;
+    }
+
+    .header img {
+      display: flex;
+      position: relative;
+      top: 28px
+    }
+
+    .section-1 {
+      justify-content: center;
+      text-align: center;
+
+    }
+
+    .section-1 h1 {
+      display: flex;
+      position: relative;
+      justify-content: center;
+      font-size: 24px;
+    }
+
+    .section-1 p {
+      position: relative;
+      left: 26.6rem;
+      top: -10px;
+      width: 400px;
+      opacity: 0.6;
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .section-1 button {
+      display: inline;
+      position: relative;
+      align-self: center;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      padding-left: 15px;
+      padding-right: 15px;
+      height: 30px;
+      margin: 10px;
+      border: none;
+      color: white;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    .section-2 {
+      position: relative;
+      top: 50px
+    }
+
+    .section-2 img {
+      position: relative;
+      top: 50px
+    }
+
+    .section-2-1 {
+      justify-content: center;
+      text-align: center;
+
+    }
+
+    .section-2-1 h1 {
+      display: flex;
+      position: relative;
+      justify-content: center;
+      font-size: 24px;
+    }
+
+    .section-2-1 p {
+      position: relative;
+      left: 25.6rem;
+      top: -10px;
+      width: 430px;
+      opacity: 0.6;
+      font-size: 11px;
+      text-align: center;
+    }
+
+
+    .section-2-2 {
+      display: inline;
+      position: relative;
+
+    }
+
+    .section-2-2-1 {
+      display: inline;
+      position: relative;
+      top: 60px;
+      left: 10rem;
+      float: right;
+    }
+
+    .section-2-2 img {
+      position: relative;
+      left: 5rem
+    }
+
+    .section-2-2 h3 {
+      font-size: 16px;
+    }
+
+    .section-2-2 p {
+
+      position: relative;
+      width: 70%;
+      opacity: 0.6;
+    }
+
+    .section-3 {
+      position: relative;
+      top: 10rem;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .section-3 h2 {
+      display: flex;
+      position: relative;
+      justify-content: center;
+      font-size: 24px;
+    }
+
+    .section-3 p {
+      position: relative;
+      left: 26.6rem;
+      top: -10px;
+      width: 420px;
+      opacity: 0.6;
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .section-3 img {
+      position: relative;
+      top: 3rem;
+    }
+
+    .section-4 {
+      
+      position: relative;
+      top: 12rem;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .section-4 h2 {
+      display: flex;
+      position: relative;
+      justify-content: center;
+      font-size: 24px;
+    }
+
+    .section-4 p {
+      position: relative;
+      left: 26.6rem;
+      top: -10px;
+      width: 420px;
+      opacity: 0.6;
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .section-4-1 {
+      display: inline-flex;
+      position: relative;
+      top: 30px;
+      width: 90%
+    }
+
+    .section-4-1 h3{
+      display: inline;
+      position: relative;
+      top: 3rem;
+      left: 6rem;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      width: 200px;
+      
+    }
+
+    .section-4-1 p{
+      position: relative;
+      left: -5rem;
+      top: 5rem;
+      width: 30%
+    }
+
+    .section-4-1 img{
+      display: flex;
+      position: relative;
+      left: 11rem
+    }
+
+    .section-5 {
+      position: relative;
+      top: 25rem;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .section-5 img{
+      position: relative;
+      bottom: 5rem;
+      margin: 4.5rem
+    }
+
+    .section-5-1{
+      position: relative;
+      bottom: 5rem;
+    }
+
+    .section-5-1 p{
+      position: relative;
+      left: 26.6rem;
+      top: -10px;
+      width: 420px;
+      opacity: 0.6;
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .section-5 button {
+      display: inline;
+      position: relative;
+      align-self: center;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      padding-left: 15px;
+      padding-right: 15px;
+      height: 30px;
+      margin: 10px;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    .footer{
+      position: relative;
+      top: 25rem;
+      background-color: hsl(180, 27%, 96%);
+      
+    }
+
+    .footer img{
+      position: relative;
+      top: 2.5rem;
+      left: 5rem
+    }
+
+    .footer-right{
+      position: relative;
+      float: right;
+      bottom: 8rem;
+      right: 10rem
+    }
+
+    .footer-right img{
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    .footer-middle{
+      flex-wrap: wrap;
+      position: relative;
+      left: 10rem;
+      top: -30px
+    }
+    
+    .footer-middle ul{
+      display: flex;
+      flex-flow: flow wrap;
+      line-height: 20px;
+    }
+
+    .footer-middle li{
+      list-style: none;
+      align-items: center;
+      height: 10px;
+      margin: 20px;
+      cursor: pointer;
+    }
+
+    footer{
+      position: relative;
+     
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="images/logo.svg" style="width: 5%;height: 5%;" />
+    </div>
+    <div class="section-1">
+
+      <h1>A history of everything you copy</h1>
+
+      <p>Clipboard allows you to track and organize everything you
+        copy. Instantly access your clipboard on all your devices.</p>
+
+      <button style="background-color: hsl(171, 66%, 44%);">Download for iOS</button>
+      <button style="background-color: hsl(233, 100%, 69%)">Download for Mac</button>
+    </div>
+    <div class="section-2">
+      <div class="section-2-1">
+        <h2>Keep track of your snippets</h2>
+
+        <p>Clipboard instantly stores any item you copy in the cloud,
+          meaning you can access your snippets immediately on all your
+          devices. Our Mac and iOS apps will help you organize everything.</p>
+      </div>
+
+      <div class="section-2-2">
+        <img src="images/image-computer.png" style="width: 40%;height: 40%;" />
+        <div class="section-2-2-1">
+          <h3>Quick Search</h3>
+
+          <p>Easily search your snippets by content, category, web address, application, and more.</p>
+
+          <h3>iCloud Sync</h3>
+
+          <p>Instantly saves and syncs snippets across all your devices.</p>
+
+          <h3>Complete History</h3>
+
+          <p>Retrieve any snippets from the first moment you started using the app.</p>
+        </div>
+      </div>
+    </div>
+    <div class="section-3">
+      <h2>Access Clipboard anywhere</h2>
+
+      <p>Whether you’re on the go, or at your computer, you can access all your Clipboard
+        snippets in a few simple clicks.</p>
+      <img src="images/image-devices.png" style="width: 45%;height: 45%;" />
+    </div>
+    <div class="section-4">
+      <h2>Supercharge your workflow</h2>
+
+      <p>We’ve got the tools to boost your productivity.</p>
+
+      <div class="section-4-1">
+        <img src="images/icon-blacklist.svg" style="width: 5%;height: 15%;" />
+        <h3>Create blacklists
+        </h3>
+        <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
+        <img src="images/icon-text.svg" style="width: 5%;height: 15%;" />
+        <h3>Plain text snippets</h3>
+
+        <p>Remove unwanted formatting from copied text for a consistent look.</p>
+        <img src="images/icon-preview.svg" style="width: 5%;height: 15%;" />
+        <h3>Sneak preview</h3>
+
+        <p>Quick preview of all snippets on your Clipboard for easy access.</p>
+      </div>
+    </div>
+    <div class="section-5">
+      <div class="section-5-image">
+        <img src="images/logo-google.png" style="width: 8%;" />
+        <img src="images/logo-ibm.png" style="width: 7%;" />
+        <img src="images/logo-microsoft.png" style="width: 10%;" />
+        <img src="images/logo-hp.png" style="width: 6%;" />
+        <img src="images/logo-vector-graphics.png" style="width: 6%;" />
+      </div>
+      <div class="section-5-1">
+      <h2>Clipboard for iOS and Mac OS</h2>
+
+      <p>Available for free on the App Store. Download for Mac or iOS, sync with iCloud
+        and you’re ready to start adding to your clipboard.</p>
+
+      <button style="background-color: hsl(171, 66%, 44%);">Download for iOS</button>
+      <button style="background-color: hsl(233, 100%, 69%)">Download for Mac</button>
+    </div>
+    </div>
+    <div class="footer">
+      <img src="images/logo.svg" style="width: 3%;height: 3%;" />
+      <div class="footer-middle">
+        <ul>
+        <li><a>FAQs</a></li>
+        <li><a>Contact Us</a></li>
+        <li><a>Privacy Policy</a></li>
+        <li><a>Press Kit</a></li>
+        <li><a>Install Guide</a></li>
+      </ul>
+      </div>
+      <div class="footer-right">
+        <img src="images/icon-facebook.svg" />
+        <img src="images/icon-instagram.svg" />
+        <img src="images/icon-twitter.svg" />
+      </div>
+      <footer>
+        <p class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+          Coded by <a href="#">Jeff Chin</a>.
+        </p>
+      </footer>
+    </div>
+  </div>
+ 
+</body>
+
+</html>
