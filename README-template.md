@@ -69,9 +69,46 @@ To see how you can add code snippets, see below:
 <h1>Some HTML code I'm proud of</h1>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+ ``` align left image and some text in the right.
+ ```
+.section-2-2 {
+      display: inline;
+      position: relative;
+
+    }
+
+    .section-2-2-1 {
+      display: inline;
+      position: relative;
+      top: 60px;
+      left: 10rem;
+      float: right;
+    }
+
+    .section-2-2 img {
+      position: relative;
+      left: 5rem
+    }
+
+    .section-2-2 h3 {
+      font-size: 16px;
+    }
+
+    .section-2-2 p {
+
+      position: relative;
+      width: 70%;
+      opacity: 0.6;
+    }
+```
+```
+align images with similar margin
+.section-5 img{
+      position: relative;
+      bottom: 5rem;
+      margin: 4.5rem
+    }
+```
 ```
 ```js
 const proudOfThisFunc = () => {
